@@ -1,4 +1,4 @@
-# my-workflow
+# web-workflow
 
 基于[fis3](http://fis.baidu.com/fis3/docs/beginning/intro.html)、[vue](http://cn.vuejs.org/guide/installation.html)
 和[amazeUI](http://amazeui.org/getting-started)搭建的前端开发环境。
@@ -30,7 +30,7 @@ fis3 release prod  //生产模式
 ### 目录规范
 
 ``` dir
-my-workflow     
+web-workflow     
     node-modules        
     src     
         components      //自定义vue组件目录
