@@ -1,0 +1,18 @@
+# ignore output folder
+output
+
+# ignore node_moduels
+node_modules
+
+# ignore IDE dir
+.idea
+
+# 忽略IDE产生的文件
+fis-conf-compiled.js
+fis-conf-compiled.js.map
+
+# ignore components folder
+# components
+
+#  --no-cache --update $FileName$:$FileNameWithoutExtension$.css
+#  --source-maps --out-file $FileNameWithoutExtension$-compiled.js $FilePath$

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+
+<div id="app">
+    <validator name="validation1">
+        address: <input type="text" v-validate:address=['email']><br />
+        <div>
+            <span v-if="$validation1.address.email">invalid your email address format.</span>
+        </div>
+        <validator>
+</div>
+
+
+<script src="/static/js/mod.js"></script>
+<script>
+    require('./testValidator');
+</script>
+</body>
+</html>
