@@ -16,7 +16,7 @@ var test = require('./test');
 test.say(' modjs !!!!!!!!!!!!!!!!1111');
 
 $('#loadBtn').click(function () {
-    require(['testAsync.js'], function (test) {
+    require(['testAsync'], function (test) {
         console.log(test, '--------------------------------------------');
         test.load();
     })
@@ -27,7 +27,7 @@ var router = new VueRouter();
 
 router.map({
     '/foo': {
-        component: require('foo'),
+        component: (resolve) => require(['foo'], resolve),
         subRoutes: {
             '/:username': {
                 component: {
@@ -35,14 +35,15 @@ router.map({
                 }
             },
             '/bar': {
-                component: require('bar')
+                component: (resolve) => require(['bar'], resolve)
             },
             '/baz': {
-                component: require('baz')
+                component: (resolve) => require(['baz'], resolve)
             }
         }
     }
 });
+
 
 var App = Vue.extend({
     data: function() {

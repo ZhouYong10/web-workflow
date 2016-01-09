@@ -2,6 +2,8 @@
  * Created by Administrator on 2015/12/21.
  */
 
+
+
 var Vue = require('vue');
 
 module.exports = Vue.extend({

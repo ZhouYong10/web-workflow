@@ -3,6 +3,6 @@
  */
 
 exports.load = function() {
-    console.log('рЛ╡╫дё©И╪стьакё╛╡╒й╧сцакjquery║ё╧Ч╧Ч╧Ч╧Ч╧Ч╧Ч╧Ч╧Ч');
-    $('#loadTxt').html('рЛ╡╫дё©И╪стьакё╛╡╒й╧сцакjquery║ё╧Ч╧Ч╧Ч╧Ч╧Ч╧Ч╧Ч╧Ч');
+    console.log('Е╪┌Ф╜╔Е┼═Х╫╫testAsync.jsФ√┤Д╩╤Ц─┌');
+    $('#loadTxt').html('Е╪┌Ф╜╔Е┼═Х╫╫testAsync.jsФ√┤Д╩╤Ц─┌Е⌠┬Е⌠┬Е⌠┬Е⌠┬');
 };

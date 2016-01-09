@@ -2,20 +2,23 @@
  * Created by Administrator on 2015/12/21.
  */
 
-//ºöÂÔ²ú³öµÄÎÄ¼þ
+//ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
 fis.set('project.ignore', ['node_modules/**', 'output/**', 'fis-conf.js', 'README.md', 'package.json', '.gitignore']);
 
 fis.hook('commonjs');
 
 fis.match('::packager', {
-    postpackager: fis.plugin('loader')
+    postpackager: fis.plugin('loader', {
+        //sourceMap: true,
+        useInlineMap: true
+    })
 });
 
 
 /*
 * deal with javascript
 * */
-//ÉèÖÃfisÊ¶±ðºó×ºÎª¡®es6¡¯µÄÎÄ¼þ
+//ï¿½ï¿½ï¿½ï¿½fisÊ¶ï¿½ï¿½ï¿½×ºÎªï¿½ï¿½es6ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
 fis.set('project.fileType.text', 'es6');
 fis.match('/src/**/(*).{js,es6}', {
     isMod: true,
