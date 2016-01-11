@@ -44,7 +44,8 @@ web-workflow
         images          //用于存放非组件相关的图片
         js              //无法使用require加载的第三方插件
         plugins         //关联样式表或图片的第三方插件
-    test                //用于独立开发的mock数据
+    mock                //用于独立开发的mock数据
+    test                //测试目录
     .gitignore
     fis-conf.js
     package.json

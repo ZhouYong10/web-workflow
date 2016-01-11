@@ -1,8 +1,6 @@
 /**
  * Created by Administrator on 2015/12/21.
  */
-
-//���Բ������ļ�
 fis.set('project.ignore', ['node_modules/**', 'output/**', 'fis-conf.js', 'README.md', 'package.json', '.gitignore']);
 
 fis.hook('commonjs');
@@ -18,20 +16,23 @@ fis.match('::packager', {
 /*
 * deal with javascript
 * */
-//����fisʶ���׺Ϊ��es6�����ļ�
 fis.set('project.fileType.text', 'es6');
 fis.match('/src/**/(*).{js,es6}', {
     isMod: true,
     id: '$1'
 });
 
-fis.match('/src/**.es6', {
+fis.match('/{src,static,test,mock}/**.es6', {
     parser: fis.plugin('babel-5.x'),
     rExt: '.js'
 });
 
 fis.match('/{src,static}/(**.{js,es6})', {
     release: '/static/js/$1'
+});
+
+fis.match('/{mock,test}/(**.{js,es6})', {
+    release: '$0'
 });
 
 /*
@@ -76,7 +77,7 @@ fis.match('/src/pages/**/(*.html)', {
 * production environment
 * */
 fis.media('prod')
-    .match('/{src,static,test}/(**.{js,es6})', {
+    .match('/{src,static,test,mock}/(**.{js,es6})', {
         useHash: true,
         optimizer: fis.plugin('uglify-js')
     })
