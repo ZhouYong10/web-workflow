@@ -2,6 +2,7 @@
  * Created by Administrator on 2015/12/21.
  */
 fis.set('project.ignore', ['node_modules/**', 'output/**', 'fis-conf.js', 'README.md', 'package.json', '.gitignore']);
+fis.config.set("project.watch.usePolling", true);
 
 fis.hook('commonjs');
 
