@@ -68,7 +68,7 @@ fis.match('/src/**.html', {
     release: false
 });
 fis.match('/src/pages/**/(*.html)', {
-    release: '/view/$1',
+    release: '/$1',
     useCache: false
 });
 
