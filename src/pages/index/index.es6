@@ -22,6 +22,7 @@ $('#loadBtn').click(function () {
     })
 });
 
+layer.msg('遍匈紗墮阻。。。。。。。。。。。。');
 
 var router = new VueRouter();
 

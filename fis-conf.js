@@ -56,7 +56,7 @@ fis.match('/{src,static}/(**.{css,scss})', {
 * deal with image
 * */
 fis.match('/{src,static}/(**.{png,jpg,gif})', {
-    optimizer: fis.plugin('png-compressor'),
+    //optimizer: fis.plugin('png-compressor'),
     release: '/static/image/$1'
 });
 
@@ -69,6 +69,13 @@ fis.match('/src/**.html', {
 fis.match('/src/pages/**/(*.html)', {
     release: '/view/$1',
     useCache: false
+});
+
+/*
+* deal with plugins
+* */
+fis.match('/static/plugins/(**)', {
+    release: '/static/$1'
 });
 
 
