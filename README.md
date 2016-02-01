@@ -56,7 +56,7 @@ web-workflow
     具体使用中，请将其中的文件删除，然后就可以开开心心的写代码了，哈哈哈哈。。。。
     
     
-### 使用到的fis第三方插件：
+### 使用到的fis插件：
 
 - [fis3-hook-commonjs](https://github.com/fex-team/fis3-hook-commonjs) 前端模块化插件
 - [fis3-postpackager-loader](https://github.com/fex-team/fis3-postpackager-loader) 前端静态资源加载器。
@@ -82,13 +82,20 @@ web-workflow
 
 
 
-### 使用到的vue插件：
+### 添加的vue插件：
     
 - [vue-router](http://vuejs.github.io/vue-router/zh-cn/index.html) Vue.js 官方路由。与 Vue.js 内核深度整合，让构建单页应用易如反掌。
 - [vue-resource](https://github.com/vuejs/vue-resource    ) 通过 XMLHttpRequest 或 JSONP 发起请求并处理响应。
 - [vue-async-data](https://github.com/vuejs/vue-async-data) 异步加载数据插件。
 - [vue-validator](https://github.com/vuejs/vue-validator) vue 表单验证插件。
 
+
+
+### 添加的第三方插件
+
+- [layer](http://layer.layui.com/) layer是一款近年来备受青睐的web弹层组件。
+- [layDate](http://laydate.layui.com/) 基于原生JavaScript的一款日期控件。
+- [layPage](http://laypage.layui.com/) layPage是一款多功能的js分页组件，即适用于异步分页，又可用于传统的整页刷新跳页，还支持信息流加载，并且可无缝迁移至Node.js平台。layPage不依赖于任何第三方库，直接拿来用即可。
 
 
 
