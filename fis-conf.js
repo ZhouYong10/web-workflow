@@ -82,11 +82,11 @@ fis.match('/static/plugins/(**)', {
 /*
 * deploy
 * */
-fis.match('/{src,static}/**', {
-    deploy: fis.plugin('local-deliver', {
-        to: './output'
-    })
-});
+//fis.match('/{src,static}/**', {
+//    deploy: fis.plugin('local-deliver', {
+//        to: './output'
+//    })
+//});
 
 
 /*
