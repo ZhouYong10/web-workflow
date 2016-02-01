@@ -58,7 +58,7 @@ fis.match('/{src,static}/(**.{css,scss})', {
 * */
 fis.match('/{src,static}/(**.{png,jpg,gif})', {
     //optimizer: fis.plugin('png-compressor'),
-    release: '/static/image/$1'
+    release: '/static/images/$1'
 });
 
 /*
@@ -79,6 +79,14 @@ fis.match('/static/plugins/(**)', {
     release: '/static/$1'
 });
 
+/*
+* deploy
+* */
+fis.match('/{src,static}/**', {
+    deploy: fis.plugin('local-deliver', {
+        to: './output'
+    })
+});
 
 
 /*
