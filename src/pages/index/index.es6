@@ -49,6 +49,15 @@ router.map({
 var App = Vue.extend({
     data: function() {
         return {message: 'Hello Vue.js'};
+    },
+    ready: function() {
+        laypage({
+            cont: 'laypage',
+            pages: 100,
+            skip: true,
+            skin: '#AF0000',
+            groups: 3
+        })
     }
 });
 
