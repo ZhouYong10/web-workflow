@@ -8,7 +8,7 @@ fis.hook('commonjs');
 
 fis.match('::packager', {
     postpackager: fis.plugin('loader', {
-        //sourceMap: true,
+        sourceMap: true,
         useInlineMap: true
     })
 });
