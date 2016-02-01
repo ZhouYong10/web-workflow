@@ -102,6 +102,9 @@ fis.media('prod')
         optimizer: fis.plugin('clean-css'),
         useSprite: true
     })
+    .match('/static/plugins/**.css', {
+        useHash: false
+    })
     .match('/{src,static}/(**.{png,jpg,gif})', {
         useHash: true
     })
@@ -124,7 +127,8 @@ fis.media('prod')
         postpackager: fis.plugin('loader', {
             allInOne: {
                 css: '/static/pak/${filepath}_aio.css',
-                js: '/static/pak/${filepath}_aio.js'
+                js: '/static/pak/${filepath}_aio.js',
+                ignore: '/static/plugins/**.js'
             },
             useInlineMap: true
         }),
