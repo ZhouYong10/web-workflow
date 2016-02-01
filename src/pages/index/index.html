@@ -111,6 +111,11 @@
 
     <hr>
 
+    加载日期： <input type="text" id="laydate" class="am-form-field laydate-icon" style="width: 200px;">
+    <div id="laypage"></div>
+
+    <hr/>
+
 
     <validator name="validation1">
         username: <input type="text" v-validate:username="{
@@ -146,7 +151,6 @@
         <a class="am-btn am-btn-primary am-round" v-link="{path: '/foo/baz'}"><i class="am-icon-shopping-basket"></i>Go to /foo/baz</a>
     </p>
 
-    <div id="laypage"></div>
 
     <router-view></router-view>
 </div>
@@ -167,6 +171,7 @@
 <!--plugins-->
 <script src="/static/plugins/layer/layer.js"></script>
 <script src="/static/plugins/laypage/laypage.js"></script>
+<script src="/static/plugins/laydate/laydate.js"></script>
 
 
 <script>

@@ -56,8 +56,15 @@ var App = Vue.extend({
             pages: 100,
             skip: true,
             skin: '#AF0000',
-            groups: 3
-        })
+            groups: 3,
+            first: 1,
+            last: 100
+        });
+
+        laydate({
+            elem: '#laydate',
+            event: 'focus'
+        });
     }
 });
 
